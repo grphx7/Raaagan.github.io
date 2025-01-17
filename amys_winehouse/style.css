@@ -1,0 +1,117 @@
+body {
+  font-family: 'Alice', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-family: 'Alice', serif;
+  background-color: #5c3956;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header div {
+  font-family: "Sacramento", serif;
+}
+
+.logo {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: url('./resources/images/image61.jpeg') no-repeat center/cover;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 20px;
+  margin: 10px 0 0;
+}
+
+.section {
+  padding: 40px 20px;
+}
+
+.products, .team {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product, .teammate {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1 1 300px;
+}
+
+.product img, .teammate img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product h3, .teammate h3 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.product p, .teammate p {
+  font-size: 16px;
+}
+
+footer {
+  background-color: #5c3956;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  nav ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .products, .team {
+      flex-direction: column;
+  }
+}
