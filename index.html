@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="./styles.css">
-    <title>RPG - Dragon Repeller</title>
-  </head>
-  <body>
-    <a href="rpg_game">RPG Game</a> - Kill the dragon, get the girl.<br>
-    <a href="amys_winehouse">Amy's Winehouse</a> - Amy's little side project
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 75%;
+            max-width: 1200px;
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            color: #ff69b4;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .project-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .project {
+            background-color: #333333;
+            border-left: 5px solid #add8e6;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            padding: 15px;
+            transition: transform 0.2s ease;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+        }
+        .project-title {
+            font-size: 1.5em;
+            color: #dda0dd;
+            margin-bottom: 10px;
+        }
+        .project-description {
+            color: #f8f8f8;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Projects</h1>
+        <ul class="project-list">
+            <li class="project">
+                <div class="project-title">Project One</div>
+                <div class="project-description">This is a short description of my first project.</div>
+            </li>
+            <li class="project">
+                <div class="project-title">Project Two</div>
+                <div class="project-description">This is a short description of my second project.</div>
+            </li>
+            <li class="project">
+                <div class="project-title">Project Three</div>
+                <div class="project-description">This is a short description of my third project.</div>
+            </li>
+        </ul>
+    </div>
+</body>
 </html>
